@@ -48,6 +48,11 @@ function Start() {
 		keyframe=0;
 		break;
 	}
+	if(Floor.dx <= -33) {
+		Floor.dx = 0;
+	} else {
+		Floor.dx -= 3;
+	}
 	
 	if(Bird.dy <= 225) {
 		moveup=false;
